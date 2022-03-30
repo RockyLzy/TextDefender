@@ -24,7 +24,6 @@ cymem==2.0.5
 datasets==1.11.0
 Deprecated==1.2.13
 dill==0.3.4
-distro-info==0.21
 docker-pycreds==0.4.0
 docopt==0.6.2
 editdistance==0.5.3
@@ -50,7 +49,6 @@ hyperopt==0.2.5
 idna==3.2
 importlib-metadata==3.10.1
 iniconfig==1.1.1
-iotop==0.6
 Janome==0.4.1
 jieba==0.42.1
 Jinja2==3.0.1
@@ -96,13 +94,11 @@ pyarrow==5.0.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
-pycurl==7.43.0.2
 pydantic==1.8.2
 PyGObject==3.30.4
 pyparsing==2.4.7
 PySocks==1.7.1
 pytest==6.2.5
-python-apt==1.8.4.3
 python-dateutil==2.8.2
 pytorch-crf==0.7.0
 pytorch-nlp==0.5.0
@@ -146,12 +142,10 @@ toml==0.10.2
 torch==1.8.0
 torchaudio==0.8.1
 torchtext==0.4.0
-torchvision==0.9.1+cu111
 tqdm==4.49.0
 transformers==4.5.1
 typer==0.3.2
 typing-extensions==3.7.4.3
-unattended-upgrades==0.1
 urllib3==1.26.6
 wandb==0.10.33
 wasabi==0.8.2
@@ -162,4 +156,5 @@ word2number==1.1
 wrapt==1.12.1
 xxhash==2.0.2
 zipp==3.5.0
+pytorch
 

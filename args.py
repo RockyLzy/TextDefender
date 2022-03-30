@@ -17,13 +17,13 @@ def string_to_bool(string_val):
 class ProgramArgs(argparse.Namespace):
     def __init__(self):
         super(ProgramArgs, self).__init__()
-        self.mode = 'attack'  # in ['train', 'attack', 'evaluate', 'augment', 'textattack_augment', 'dev_augment']
+        self.mode = 'train'  # in ['train', 'attack', 'evaluate', 'augment', 'textattack_augment', 'dev_augment']
         self.model_type = 'bert'
         self.dataset_name = 'agnews'
         self.keep_sentiment_word = 'False'
         self.model_name_or_path = 'bert-base-uncased'
         self.evaluation_data_type = 'test'
-        self.training_type = 'freelb'
+        self.training_type = 'base'
 
         # attack parameters
         self.attack_method = 'bae'
@@ -36,7 +36,7 @@ class ProgramArgs(argparse.Namespace):
         self.query_budget_size = self.neighbour_vocab_size
 
         # path parameters
-        self.workspace = '/path/to/your/own/workspace'
+        self.workspace = '/disks/sdb/lzy/workspace'
         self.dataset_path = self.workspace + '/dataset/' + self.dataset_name
         # self.log_path = self.workspace + '/log/' + self.dataset_name + '_' + self.model_type
         self.cache_path = self.workspace + '/cache'
