@@ -215,11 +215,11 @@ class ProgramArgs(argparse.Namespace):
             return '{}-{}'.format(self.mode, self.build_saving_file_name())
 
     def build_logging_file(self):
+        logging_path = self.build_logging_path()
+        logging_path = os.path.join(self.log_path, logging_path)
+        if not os.path.exists(logging_path):
+            os.makedirs(logging_path)
         if self.mode == 'attack':
-            logging_path = self.build_logging_path()
-            logging_path = os.path.join(self.log_path, logging_path)
-            if not os.path.exists(logging_path):
-                os.makedirs(logging_path)
             return os.path.join(logging_path, 'running.log')
         else:
             return os.path.join(self.log_path, '{}.log'.format(self.build_logging_path()))
