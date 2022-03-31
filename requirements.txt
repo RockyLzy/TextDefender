@@ -156,4 +156,4 @@ word2number==1.1
 wrapt==1.12.1
 xxhash==2.0.2
 zipp==3.5.0
-
+colorama
